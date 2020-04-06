@@ -21,7 +21,8 @@ namespace Cases.Tests
         [Test]
         public void Test()
         {
-            Console.WriteLine("Testing");
+            _driver.FindElement(By.TagName("Dresses")).Click();
+            
         }
     }
 }
