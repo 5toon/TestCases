@@ -21,7 +21,9 @@ namespace Cases.Tests
         [Test]
         public void Test()
         {
-            _driver.FindElement(By.TagName("Dresses")).Click();
+            _driver.FindElement(By.Id("search_query_top")).Clear();
+            _driver.FindElement(By.Id("search_query_top")).SendKeys("Blouse");
+            _driver.FindElement(By.Name("submit_search")).Click();
             
         }
     }
